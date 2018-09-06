@@ -1,10 +1,20 @@
 {
   "name": "vitaliy_dior/eloquent-usefulness",
   "description": "Collection of use ful eloquent traits",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "license": "MIT",
+  "keywords": ["eloquent", "attributes", "relations"],
+  "require": {
+    "php" : ">=5.5.0"
+  },
   "autoload": {
     "psr-4": {
       "VitaliyDior\\EloquentUsefulness\\": "src/VitaliyDior/EloquentUsefulness"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
     }
   }
 }
