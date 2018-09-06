@@ -1,0 +1,10 @@
+{
+  "name": "vitaliy_dior/eloquent-usefulness",
+  "description": "Collection of use ful eloquent traits",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "VitaliyDior\\EloquentUsefulness\\": "src/VitaliyDior/EloquentUsefulness"
+    }
+  }
+}
