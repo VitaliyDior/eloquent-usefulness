@@ -6,8 +6,10 @@
  * Time: 12:06
  */
 
-namespace VitaliyDior\EloquentUsefulness\Traits;
+namespace EloquentUsefulness\Traits;
 
+
+use function array_filter;
 
 trait HasImplodableAttribute
 {
@@ -18,7 +20,7 @@ trait HasImplodableAttribute
      *
      * @return string
      */
-    public function getImplodeDelimiter()
+    protected function getImplodeDelimiter()
     {
         return defined('static::DELIMITER') ? static::DELIMITER : '|';
     }
@@ -27,7 +29,7 @@ trait HasImplodableAttribute
     protected function getListedAttribute($value)
     {
         return (! is_null($value)) ?
-            explode($this->getImplodeDelimiter(), $value) :
+            array_filter(explode($this->getImplodeDelimiter(), $value)) :
             [];
     }
 
